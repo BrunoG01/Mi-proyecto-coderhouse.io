@@ -614,12 +614,6 @@ footer div ul li b{
     }
 }
 
-:root{
-    --tipografiaTitulos: font-family: 'Roboto Condensed', sans-serif;
-    --TipografiasParrafos: font-family: 'Roboto Mono', monospace;
-    -colores: #430055 - #8040bc - #d9009c;
-}
-
 /*sucursales*/
 .titulo-sucursales{
     margin: 25px 25px 0px 25px;
