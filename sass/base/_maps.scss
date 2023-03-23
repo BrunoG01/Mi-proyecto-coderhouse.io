@@ -1,0 +1,22 @@
+
+// estilos de background imagenes
+$bg-img:(
+    repeat-img: no-repeat,
+    bg-size: cover,
+    bg-position: center,
+);
+
+// estilos generales de las secciones
+$seccion:(
+    margen-seccion: 25px,
+    relleno-seccion: #d9009c,
+    brecha-seccion: 10px,
+);
+
+// estilos generales del footer 
+$footer:(
+    bg-footer: #8040bc,
+    padding-footer: 10px,
+    display-footer: grid,
+    columnas: repeat(3, 1fr),
+);

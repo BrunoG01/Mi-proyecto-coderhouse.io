@@ -1,0 +1,87 @@
+.content_titulos-secundarios{
+    margin: 25px 25px 0px 25px;
+    font-size: nth($h2-fuente, 1 );
+    h2{
+        font-size: nth($h2-fuente, 1 );
+        font-family: $t-titulos;
+        color: nth($colores, 1);
+        margin: $sin-margen;
+        text-shadow: $sombra;
+        @media screen and (max-width: 767px){
+            font-size: nth($h2-fuente, 2);
+        }
+    }
+}
+.sobre-nosotros{
+    @include mostrar(grid, 1fr 3fr, 1fr);
+    @media screen and (max-width: 992px){
+        grid-template-columns: 1fr;
+    }
+    .secciones{
+        background: map-get($seccion, relleno-seccion);
+        margin: map-get($seccion, margen-seccion);
+        @include caja(flex, column, space-between);
+        .contenido-sn{
+            padding: nth($espacio, 3);
+            h3{
+                font-size: nth($h3-fuente, 1);
+                font-family: $t-titulos;
+                color: nth($colores, 1);
+                text-shadow: $sombra;
+                text-align: center;
+                margin-bottom: nth($espacio, 2);
+                @media screen and (max-width: 767px){
+                    font-size: nth($h3-fuente, 2);
+                }
+                @media screen and (max-width: 576px){
+                    font-size: nth($h3-fuente, 3);
+                }
+            }
+            p{
+                font-size: nth($p-fuente, 2);
+                font-family: $t-parrafos;
+                color: nth($colores, 1);
+                margin: $sin-margen;
+                @media screen and (max-width: 576px){
+                    font-size: nth($p-fuente, 3);
+                    text-align: center;
+                }
+            }
+        }
+        .img_izq-sn{
+            text-align: center;
+            padding: nth($espacio, 3);
+            img{
+                border: $borde-img;
+                border-radius: nth($b-radius, 3);
+                @media screen and (max-width: 992px){
+                    height: 400px;
+                }
+                @media screen and (max-width: 767px){
+                    height: 300px;
+                }
+                @media screen and (max-width: 576px){
+                    height: 200px;
+                }
+            }
+        }
+        .carousel{
+            margin: nth($margen, 2);
+            @media screen and (max-width: 767px){
+                margin: 15px 70px;
+            }
+            @media screen and (max-width: 576px){
+                margin: 15px 30px;
+            }
+            img{
+                height: 80vh;
+                @media screen and (max-width: 767px){
+                    height: 200px;
+                }
+                @media screen and (max-width: 576px){
+                    height: 150px;
+                }
+            }
+        } 
+    }
+}

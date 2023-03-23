@@ -1,0 +1,19 @@
+.sub_secciones ul li i{
+    color: nth($colores, 4);
+}
+.ubicacion-sucursal{
+    text-align: center;
+    margin: nth($espacio, 3);
+    a{
+        text-decoration: $d-text;
+        color: nth($colores, 1);
+        font-family: $t-parrafos;
+        border: $borde-img;
+        border-radius: nth($b-radius, 3);
+        padding: nth($espacio, 1);
+        background-color: nth($colores, 5);
+        &:hover{
+            color: nth($colores, 4);
+        }
+    }
+}

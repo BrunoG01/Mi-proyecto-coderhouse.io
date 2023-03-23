@@ -1,0 +1,12 @@
+//display grid
+@mixin mostrar($d-grid, $columnas, $filas){
+    display: $d-grid;
+    grid-template-columns: $columnas;
+    grid-template-rows: $filas;
+}
+//display flex
+@mixin caja($d-flex, $direccion, $justificado){
+    display: $d-flex;
+    flex-direction: $direccion;
+    justify-content: $justificado;
+}
